@@ -1,0 +1,1270 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://Assets/Buttons/Nose_inv.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Buttons/Name.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Buttons/ButtonRight_inv.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Buttons/Skin_inv.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Buttons/ButtonLeft_inv.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Buttons/ButtonRight.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Buttons/ButtonLeft.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Buttons/Save_inv.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Buttons/Save.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Buttons/Hair_inv.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Buttons/Hair.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Buttons/WoodenBoard.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Buttons/Gear_inv.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Buttons/Wound_inv.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Buttons/Wound.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Buttons/Beard_inv.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Buttons/Body.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Buttons/Eyes.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Buttons/Gear.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Buttons/Beard.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Buttons/Body_inv.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Buttons/Eyes_inv.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Buttons/Skin.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Buttons/Home_inv.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Buttons/Home.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Backgrounds/spaceBackground/Back.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Music/Soliloquy.ogg" type="AudioStream" id=27]
+[ext_resource path="res://Assets/Buttons/Gear/Legs.png" type="Texture" id=28]
+[ext_resource path="res://CharacterEditor.gd" type="Script" id=29]
+[ext_resource path="res://Assets/Buttons/Nose.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Buttons/Ears_inv.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Buttons/Ears.png" type="Texture" id=32]
+[ext_resource path="res://character.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Assets/Buttons/Gear/Misc_inv.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Buttons/Gear/Weapons_inv.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Buttons/Gear/Hands.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Buttons/Gear/Arms_inv.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Buttons/Gear/Head.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Buttons/Gear/Torso_inv.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Buttons/Gear/Waist.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Buttons/Gear/Arms.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Buttons/Gear/Head_inv.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Buttons/Gear/Face.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Buttons/Gear/Weapons.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Buttons/Gear/Face_inv.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Buttons/Gear/Misc.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Buttons/Gear/Torso.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Buttons/Gear/Waist_inv.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Buttons/Gear/Hands_inv.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Buttons/Gear/Legs_inv.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Buttons/Gear/Feet_inv.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Buttons/Gear/Feet.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Buttons/Horns.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Buttons/Horns_inv.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Buttons/Avatar.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Buttons/Avatar_inv.png" type="Texture" id=56]
+[ext_resource path="res://avatar.tscn" type="PackedScene" id=57]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 2
+
+[node name="CharacterEditor" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+material = SubResource( 1 )
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 704, 672 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Sprite" parent="Panel"]
+position = Vector2( 642.335, 384 )
+scale = Vector2( 1.86395, 1.86028 )
+texture = ExtResource( 26 )
+
+[node name="WoodenBoard" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( 544, 326.001 )
+scale = Vector2( 1.49333, 1.08667 )
+texture = ExtResource( 12 )
+
+[node name="Name" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( 544, 40.251 )
+scale = Vector2( 1.61, 1.08182 )
+texture = ExtResource( 2 )
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+margin_right = 192.0
+margin_bottom = 192.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leftArrow" type="TextureButton" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_left = 0.25
+anchor_top = 0.4
+anchor_right = 0.325
+anchor_bottom = 0.533
+margin_left = -96.0
+margin_top = -25.999
+margin_right = -96.0
+margin_bottom = -25.7591
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save" type="TextureButton" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_left = 0.025
+anchor_top = 0.267
+anchor_right = 0.1
+anchor_bottom = 0.444
+margin_top = -0.240036
+margin_right = 32.0
+margin_bottom = 0.319946
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="home" type="TextureButton" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_left = 0.025
+anchor_top = 0.044
+anchor_right = 0.125
+anchor_bottom = 0.222
+margin_top = 0.319994
+margin_bottom = 0.159973
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 24 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rightArrow" type="TextureButton" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_left = 0.675
+anchor_top = 0.4
+anchor_right = 0.75
+anchor_bottom = 0.533
+margin_left = -96.0
+margin_top = -25.999
+margin_right = -96.0001
+margin_bottom = -25.759
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="TextureButton" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_left = 0.325
+anchor_top = 0.8
+anchor_right = 0.425
+anchor_bottom = 0.889
+margin_left = -64.0
+margin_right = -63.9999
+margin_bottom = -0.0800171
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gear" type="TextureButton" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_left = 0.425
+anchor_top = 0.8
+anchor_right = 0.525
+anchor_bottom = 0.889
+margin_left = -64.0
+margin_right = -64.0001
+margin_bottom = -0.0800171
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="beardColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.611
+anchor_right = 0.241
+anchor_bottom = 1.252
+margin_left = 48.0
+margin_top = 47.7021
+margin_right = 47.52
+margin_bottom = 48.1821
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="skinColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.611
+anchor_right = 0.241
+anchor_bottom = 1.252
+margin_left = 48.0
+margin_top = 47.7021
+margin_right = 47.52
+margin_bottom = 48.1821
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hairColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.611
+anchor_right = 0.241
+anchor_bottom = 1.252
+margin_left = 48.0
+margin_top = 47.7021
+margin_right = 47.52
+margin_bottom = 48.182
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="noseColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.606
+anchor_right = 0.241
+anchor_bottom = 1.252
+margin_left = 48.0
+margin_top = 51.3021
+margin_right = 47.52
+margin_bottom = 48.1821
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scleraColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.611
+anchor_right = 0.244
+anchor_bottom = 1.252
+margin_left = 48.0
+margin_top = 47.7021
+margin_right = 43.68
+margin_bottom = 48.1821
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="irisColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = 0.619
+anchor_top = 0.611
+anchor_right = 0.859
+anchor_bottom = 1.252
+margin_left = 47.6418
+margin_top = 47.7021
+margin_right = 48.4418
+margin_bottom = 48.182
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="woundColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.611
+anchor_right = 0.241
+anchor_bottom = 1.252
+margin_left = 48.0
+margin_top = 47.7021
+margin_right = 47.52
+margin_bottom = 48.182
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hornsColorPicker" type="ColorPicker" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_top = 0.611
+anchor_right = 0.241
+anchor_bottom = 1.252
+margin_left = 52.0
+margin_top = 51.7021
+margin_right = 51.52
+margin_bottom = 52.182
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hornsList" type="ItemList" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="Panel/hornsList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="VSlider" type="VSlider" parent="Panel/hornsList"]
+margin_right = 16.0
+margin_bottom = 635.0
+
+[node name="irisList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = -191.84
+max_columns = 3
+icon_scale = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="Panel/irisList"]
+position = Vector2( 96, 112 )
+scale = Vector2( 0.64, 0.373335 )
+texture = ExtResource( 12 )
+
+[node name="scleraList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 256.0
+margin_right = 960.0
+margin_bottom = 0.160004
+max_columns = 3
+icon_scale = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="Panel/scleraList"]
+position = Vector2( 96, 95.9995 )
+scale = Vector2( 0.64, 0.320002 )
+texture = ExtResource( 12 )
+
+[node name="woundList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+max_columns = 3
+icon_scale = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard3" type="Sprite" parent="Panel/woundList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="noseList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+max_columns = 3
+icon_scale = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard2" type="Sprite" parent="Panel/noseList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="hairList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+max_columns = 3
+icon_scale = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard3" type="Sprite" parent="Panel/hairList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="skinList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+max_columns = 3
+icon_scale = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard3" type="Sprite" parent="Panel/skinList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="earsList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+max_columns = 3
+icon_scale = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard2" type="Sprite" parent="Panel/earsList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="beardList" type="ItemList" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = 896.0
+margin_top = 32.0
+margin_right = 960.0
+margin_bottom = 224.16
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="Panel/beardList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="character" parent="Panel" instance=ExtResource( 33 )]
+position = Vector2( 544, 320 )
+scale = Vector2( 7, 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
+autoplay = true
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.875
+anchor_top = 0.089
+anchor_right = 1.0
+anchor_bottom = 0.622
+margin_left = -0.00012207
+margin_top = -0.0800018
+margin_bottom = 0.159973
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hair" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 1.0
+anchor_bottom = 0.167
+margin_bottom = -0.128006
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nose" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.667
+anchor_right = 1.0
+anchor_bottom = 0.833
+margin_top = -0.128021
+margin_bottom = 0.127991
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skin" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.667
+margin_bottom = -0.128021
+texture_normal = ExtResource( 23 )
+texture_pressed = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Wound" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.333
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 0.127998
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Eyes" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.167
+anchor_right = 1.0
+anchor_bottom = 0.333
+margin_top = -0.128006
+margin_bottom = 0.127998
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 22 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Beard" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.833
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 0.127991
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ears" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.833
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 64.128
+margin_bottom = 64.0
+texture_normal = ExtResource( 32 )
+texture_pressed = ExtResource( 31 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Horns" type="TextureButton" parent="Control"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.833
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 128.128
+margin_bottom = 128.0
+texture_normal = ExtResource( 53 )
+texture_pressed = ExtResource( 54 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gearControl" type="Control" parent="."]
+visible = false
+anchor_left = 0.9
+anchor_top = 0.089
+anchor_right = 1.0
+anchor_bottom = 0.711
+margin_left = -32.0
+margin_top = -0.0800018
+margin_bottom = 0.0799866
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="face" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.143
+anchor_right = 1.0
+anchor_bottom = 0.286
+margin_top = -84.0628
+margin_bottom = -84.1268
+texture_normal = ExtResource( 43 )
+texture_pressed = ExtResource( 45 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="legs" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.143
+anchor_right = 1.0
+anchor_bottom = 0.286
+margin_top = 427.937
+margin_bottom = 427.873
+texture_normal = ExtResource( 28 )
+texture_pressed = ExtResource( 50 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="misc" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.143
+margin_top = -19.9988
+margin_bottom = -20.0628
+texture_normal = ExtResource( 46 )
+texture_pressed = ExtResource( 34 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="waist" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.857
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -19.9348
+margin_bottom = -19.9987
+texture_normal = ExtResource( 40 )
+texture_pressed = ExtResource( 48 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="head" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 1.0
+anchor_bottom = 0.143
+margin_top = -83.9988
+margin_bottom = -84.0628
+texture_normal = ExtResource( 38 )
+texture_pressed = ExtResource( 42 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weapons" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.714
+anchor_right = 1.0
+anchor_bottom = 0.857
+margin_top = -19.8708
+margin_bottom = -19.9348
+texture_normal = ExtResource( 44 )
+texture_pressed = ExtResource( 35 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hands" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.571
+anchor_right = 1.0
+anchor_bottom = 0.714
+margin_top = -19.8068
+margin_bottom = -19.8707
+texture_normal = ExtResource( 36 )
+texture_pressed = ExtResource( 49 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arms" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.429
+anchor_right = 1.0
+anchor_bottom = 0.571
+margin_top = -20.1908
+margin_bottom = -19.8068
+texture_normal = ExtResource( 41 )
+texture_pressed = ExtResource( 37 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="feet" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.429
+anchor_right = 1.0
+anchor_bottom = 0.571
+margin_top = 363.809
+margin_bottom = 364.193
+texture_normal = ExtResource( 52 )
+texture_pressed = ExtResource( 51 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="torso_u" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.286
+anchor_right = 1.0
+anchor_bottom = 0.429
+margin_top = -84.1268
+margin_bottom = -84.1908
+texture_normal = ExtResource( 47 )
+texture_pressed = ExtResource( 39 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="torso_o" type="TextureButton" parent="gearControl"]
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_top = 0.286
+anchor_right = 1.0
+anchor_bottom = 0.429
+margin_top = -20.1268
+margin_bottom = -20.1908
+texture_normal = ExtResource( 47 )
+texture_pressed = ExtResource( 39 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="miscList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/miscList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="feetList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/feetList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="waistList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/waistList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="skirtList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/skirtList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="legsList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/legsList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="shouldersList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/shouldersList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="headList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/headList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="handsList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/handsList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="armsList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/armsList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="torso_uList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/torso_uList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="torso_oList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/torso_oList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="faceList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/faceList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="braceletList" type="ItemList" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+anchor_right = 0.1
+anchor_bottom = 0.622
+margin_left = -224.0
+margin_top = -32.0
+margin_right = -48.0
+margin_bottom = 329.344
+icon_scale = 3.8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WoodenBoard" type="Sprite" parent="gearControl/braceletList"]
+position = Vector2( 96, 320 )
+scale = Vector2( 0.64, 1.06667 )
+texture = ExtResource( 12 )
+
+[node name="miscColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.087
+anchor_bottom = 1.473
+margin_left = 72.0001
+margin_top = 71.9703
+margin_right = 73.92
+margin_bottom = 246.354
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="headColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.075
+anchor_bottom = 1.862
+margin_left = 72.0001
+margin_top = 71.9703
+margin_right = 72.0001
+margin_bottom = 72.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="torso_uColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.087
+anchor_bottom = 1.862
+margin_left = 72.0001
+margin_top = 71.9704
+margin_right = 73.92
+margin_bottom = 72.0824
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="torso_oColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.087
+anchor_bottom = 1.862
+margin_left = 72.0001
+margin_top = 71.9703
+margin_right = 73.92
+margin_bottom = 72.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="armsColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.087
+anchor_bottom = 1.862
+margin_left = 72.0001
+margin_top = 71.9703
+margin_right = 73.92
+margin_bottom = 72.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="handsColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.075
+anchor_bottom = 1.862
+margin_left = 72.0001
+margin_top = 71.9703
+margin_right = 72.0001
+margin_bottom = 72.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="waistColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -7.0
+anchor_top = 0.831
+anchor_right = -5.075
+anchor_bottom = 1.862
+margin_left = 72.0001
+margin_top = 71.9703
+margin_right = 72.0001
+margin_bottom = 72.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="faceColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -6.937
+anchor_top = 0.831
+anchor_right = -5.075
+anchor_bottom = 1.862
+margin_left = 61.92
+margin_top = 71.9703
+margin_right = 72.0001
+margin_bottom = 72.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="legsColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -6.937
+anchor_top = 0.831
+anchor_right = -5.075
+anchor_bottom = 1.862
+margin_left = 65.92
+margin_top = 75.9703
+margin_right = 76.0001
+margin_bottom = 76.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="feetColorPicker" type="ColorPicker" parent="gearControl"]
+visible = false
+modulate = Color( 1, 1, 1, 0.196078 )
+anchor_left = -6.937
+anchor_top = 0.831
+anchor_right = -5.075
+anchor_bottom = 1.862
+margin_left = 69.92
+margin_top = 79.9703
+margin_right = 80.0001
+margin_bottom = 80.0823
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0.392157 )
+margin_left = 608.0
+margin_top = 576.0
+margin_right = 736.0
+margin_bottom = 640.0
+texture_normal = ExtResource( 55 )
+texture_pressed = ExtResource( 56 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="avatar" parent="." instance=ExtResource( 57 )]
+visible = false
+position = Vector2( -32, -32 )
+[connection signal="pressed" from="Panel/leftArrow" to="." method="_on_leftArrow_pressed"]
+[connection signal="pressed" from="Panel/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="Panel/rightArrow" to="." method="_on_rightArrow_pressed"]
+[connection signal="pressed" from="Panel/Body" to="." method="_on_Body_pressed"]
+[connection signal="pressed" from="Panel/Gear" to="." method="_on_Gear_pressed"]
+[connection signal="color_changed" from="Panel/beardColorPicker" to="." method="_on_beardColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/skinColorPicker" to="." method="_on_skinColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/hairColorPicker" to="." method="_on_hairColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/noseColorPicker" to="." method="_on_noseColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/scleraColorPicker" to="." method="_on_scleraColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/irisColorPicker" to="." method="_on_irisColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/woundColorPicker" to="." method="_on_woundColorPicker_color_changed"]
+[connection signal="color_changed" from="Panel/hornsColorPicker" to="." method="_on_hornsColorPicker_color_changed"]
+[connection signal="item_selected" from="Panel/hornsList" to="." method="_on_hornsList_item_selected"]
+[connection signal="value_changed" from="Panel/hornsList/VSlider" to="." method="_on_VSlider_value_changed"]
+[connection signal="item_selected" from="Panel/irisList" to="." method="_on_irisList_item_selected"]
+[connection signal="item_selected" from="Panel/scleraList" to="." method="_on_scleraList_item_selected"]
+[connection signal="item_selected" from="Panel/woundList" to="." method="_on_woundList_item_selected"]
+[connection signal="item_selected" from="Panel/noseList" to="." method="_on_noseList_item_selected"]
+[connection signal="item_selected" from="Panel/hairList" to="." method="_on_hairList_item_selected"]
+[connection signal="item_selected" from="Panel/skinList" to="." method="_on_skinList_item_selected"]
+[connection signal="item_selected" from="Panel/earsList" to="." method="_on_earsList_item_selected"]
+[connection signal="item_selected" from="Panel/beardList" to="." method="_on_beardList_item_selected"]
+[connection signal="pressed" from="Control/Hair" to="." method="_on_Hair_pressed"]
+[connection signal="pressed" from="Control/Nose" to="." method="_on_Nose_pressed"]
+[connection signal="pressed" from="Control/Skin" to="." method="_on_Skin_pressed"]
+[connection signal="pressed" from="Control/Wound" to="." method="_on_Wound_pressed"]
+[connection signal="pressed" from="Control/Eyes" to="." method="_on_Eyes_pressed"]
+[connection signal="pressed" from="Control/Beard" to="." method="_on_Beard_pressed"]
+[connection signal="pressed" from="Control/Ears" to="." method="_on_Ears_pressed"]
+[connection signal="pressed" from="Control/Horns" to="." method="_on_Horns_pressed"]
+[connection signal="pressed" from="gearControl/face" to="." method="_on_face_pressed"]
+[connection signal="pressed" from="gearControl/legs" to="." method="_on_legs_pressed"]
+[connection signal="pressed" from="gearControl/misc" to="." method="_on_misc_pressed"]
+[connection signal="pressed" from="gearControl/waist" to="." method="_on_waist_pressed"]
+[connection signal="pressed" from="gearControl/head" to="." method="_on_head_pressed"]
+[connection signal="pressed" from="gearControl/Weapons" to="." method="_on_Weapons_pressed"]
+[connection signal="pressed" from="gearControl/hands" to="." method="_on_hands_pressed"]
+[connection signal="pressed" from="gearControl/arms" to="." method="_on_arms_pressed"]
+[connection signal="pressed" from="gearControl/feet" to="." method="_on_feet_pressed"]
+[connection signal="pressed" from="gearControl/torso_u" to="." method="_on_torso_u_pressed"]
+[connection signal="pressed" from="gearControl/torso_o" to="." method="_on_torso_o_pressed"]
+[connection signal="item_selected" from="gearControl/miscList" to="." method="_on_miscList_item_selected"]
+[connection signal="item_selected" from="gearControl/feetList" to="." method="_on_feetList_item_selected"]
+[connection signal="item_selected" from="gearControl/waistList" to="." method="_on_waistList_item_selected"]
+[connection signal="item_selected" from="gearControl/skirtList" to="." method="_on_waistList_item_selected"]
+[connection signal="item_selected" from="gearControl/legsList" to="." method="_on_legsList_item_selected"]
+[connection signal="item_selected" from="gearControl/shouldersList" to="." method="_on_waistList_item_selected"]
+[connection signal="item_selected" from="gearControl/headList" to="." method="_on_headList_item_selected"]
+[connection signal="item_selected" from="gearControl/handsList" to="." method="_on_handsList_item_selected"]
+[connection signal="item_selected" from="gearControl/armsList" to="." method="_on_armsList_item_selected"]
+[connection signal="item_selected" from="gearControl/torso_uList" to="." method="_on_torso_uList_item_selected"]
+[connection signal="item_selected" from="gearControl/torso_oList" to="." method="_on_torso_oList_item_selected"]
+[connection signal="item_selected" from="gearControl/faceList" to="." method="_on_faceList_item_selected"]
+[connection signal="item_selected" from="gearControl/braceletList" to="." method="_on_faceList_item_selected"]
+[connection signal="color_changed" from="gearControl/miscColorPicker" to="." method="_on_miscColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/headColorPicker" to="." method="_on_headColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/torso_uColorPicker" to="." method="_on_torso_uColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/torso_oColorPicker" to="." method="_on_torso_oColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/armsColorPicker" to="." method="_on_armsColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/handsColorPicker" to="." method="_on_handsColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/waistColorPicker" to="." method="_on_waistColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/faceColorPicker" to="." method="_on_faceColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/legsColorPicker" to="." method="_on_legsColorPicker_color_changed"]
+[connection signal="color_changed" from="gearControl/feetColorPicker" to="." method="_on_feetColorPicker_color_changed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
